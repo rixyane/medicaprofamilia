@@ -1,17 +1,48 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600;8..144,700&display=swap');
 
+:root {
+  --baby-blue: #d4f1f4;
+  --white: #ffffff;
+}
+
+
 html,
 body {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* icons */
 .fa-solid {
-  font-size: 1.5rem;
+  @apply text-lg;
+}
+
+/* heading */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}
+h3 {
+  @apply text-base;
 }
 
 /* button */
+.p-button {
+  @apply px-6 py-3 inline-flex items-center;
 
+  .p-ink {
+    @apply absolute pointer-events-none;
+  }
+}
+.p-button-icon-only {
+  @apply px-3;
+
+  .p-button-label {
+    @apply hidden;
+  }
+}
 

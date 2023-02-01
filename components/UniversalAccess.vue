@@ -14,7 +14,9 @@
     :show-close-icon="true"
     style="width: 450px"
     :breakpoints="{ '960px': '75vw' }"
-  ></OverlayPanel>
+  >
+    <h3 class="uppercase">Narzędzia dostępności</h3>
+  </OverlayPanel>
 </template>
 
 <script setup lang="ts">
@@ -22,7 +24,7 @@ import OverlayPanel from 'primevue/overlaypanel';
 
 const universalAccessPanel = ref<OverlayPanel | null>(null);
 const toggle = (event: Event) => {
-  universalAccessPanel.value.toggle(event);
+  universalAccessPanel.value?.toggle(event);
 };
 </script>
 

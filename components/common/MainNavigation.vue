@@ -1,9 +1,12 @@
 <template>
-  <div>
-    {{ navi.navigationMenu }}
-  </div>
+  <div class="flex items-center justify-between max-w-[1440px] mx-auto px-16 py-6">
+    <div>
+      {{ navi.navigationMenu }}
+    </div>
 
-  <UniversalAccess />
+    <UniversalAccess />
+  </div>
+  
 </template>
 
 <script setup lang="ts">

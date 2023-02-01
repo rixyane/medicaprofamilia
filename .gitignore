@@ -1,0 +1,26 @@
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+
+# compiled output
+/dist
+/storybook-static
+/node_modules
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.vercel

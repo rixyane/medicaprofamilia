@@ -17,4 +17,11 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: '~/assets/styles/tailwind.css',
   },
+  hooks: {
+    'vite:extendConfig': (config, { isClient }) => {
+      if (isClient) {
+        config.resolve.alias.vue = 'vue/dist/vue.esm-bundler';
+      }
+    },
+  },
 });
